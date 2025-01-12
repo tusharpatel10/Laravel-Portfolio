@@ -44,7 +44,8 @@ section {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  transition: 0.9s;
+  /* transition: 0.9s; */
+  transition: transform 0.4s ease-in-out;
 }
 
 .logo {
@@ -58,8 +59,8 @@ section {
 
 .header a:hover {
   color: var(--main-color);
-            /* cursor: pointer; */
-  ;
+  /* cursor: pointer; */
+  transform: scale(1.3);
 }
 
 .navbar a {
@@ -68,13 +69,14 @@ section {
   margin-left: 4rem;
   font-weight: 700;
   text-decoration: none;
-  transition: 0.8s;
+  transition: transform 0.4s ease-in-out;
 }
 
 .navbar a:hover,
         .navbar a.active {
   color: var(--main-color);
   cursor: pointer;
+  transform: scale(1.3);
 }
 
 #menu-icon {
@@ -189,6 +191,7 @@ span {
 .about-img img {
   width: 135%;
   /* margin-right: 60px; */
+  ;
 }
 
 .heading {
@@ -308,6 +311,8 @@ span {
 
 .portfolio-box:hover .portfolio-layer {
   transform: translateY(0);
+  cursor: pointer;
+
 }
 
 .portfolio-layer h4 {
@@ -384,7 +389,8 @@ footer {
   flex-wrap: wrap;
   padding: 2rem 9%;
   background: var(--snd-bg-color);
-  /* flex-direction: column; */;
+  /* flex-direction: column; */
+  ;
 }
 
 .footer-text {
@@ -414,7 +420,7 @@ footer {
 
 
         /* breakpont */
-@media(max-width: 1200px) {
+@media(max-width:1200px) {
   html {
     font-size: 55%;
   }
@@ -446,7 +452,7 @@ footer {
   }
 }
 
-@media(max-width: 768px) {
+@media(max-width:768px) {
   #menu-icon {
     display: block;
   }
@@ -511,7 +517,7 @@ footer {
   }
 }
 
-@media(max-width: 617px) {
+@media(max-width:617px) {
 
   .portfolio-container {
     grid-template-columns: 1fr;
@@ -528,7 +534,7 @@ footer {
   }
 }
 
-@media(max-width: 450px) {
+@media(max-width:450px) {
   html {
     font-size: 50%;
   }
